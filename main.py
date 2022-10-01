@@ -165,7 +165,7 @@ async def on_message(message):
 
   # SEND HERE
   if message.content.startswith(pref+send.get):
-    channel = client.get_channel(829651494533070849)
+    channel = client.get_channel([REDACTED])
     msg = message.content
     msg = msg[len(pref+send.get)+1:]
     msg = '%s: %s' %(message.author, msg) 
